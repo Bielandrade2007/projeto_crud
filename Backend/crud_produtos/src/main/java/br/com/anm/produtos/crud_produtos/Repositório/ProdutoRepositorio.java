@@ -1,5 +1,15 @@
+    package br.com.anm.produtos.crud_produtos;
 
-public interface ProdutoRepositorio extends crudRepository<ProdutoModelo, long> {
+    import org.springframework.stereotype.Component;
+    import lombok.Getter;
+    import lombok .setter; 
+
+    @Component
+    @setter
+    @Getter 
+
+    public class RespostaMOdelo{
+    private string resposta;
     
 }
 
