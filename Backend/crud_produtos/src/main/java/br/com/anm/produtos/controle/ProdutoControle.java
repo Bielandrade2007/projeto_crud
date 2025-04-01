@@ -8,6 +8,12 @@ import org.springtramework.web.bind.annotation.RestControler;
 public class ProdutoControle
  private ProdutoControle
 
+    @PostMapping("/cadrastrar")
+    public ResponseEntity<?> cadrastrar(@RequestBody ProdutoModelo pm){
+        return ps.cadrastrar(pm);
+        
+    }
+
     @GetMapping("/lista") 
     public iterable<ProdutoModelo> listar(){
         return ps.listar();
