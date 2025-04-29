@@ -6,8 +6,8 @@ import Tabela from './Tabela';
 
 function App() {
 
-  const [btnCadastrar] = useState(true);
-  const [produtos, setProdutos] = useState([]);
+const[btnCadastrar] =useState(true);
+const[produtos, setProdutos] =useState([]);
 
 
   //UseEffect
@@ -18,11 +18,11 @@ function App() {
   }, []);
 
 
-  return (
-    <div>
-      <Formulario botao={btnCadastrar} />
-      <Tabela vetor={produtos} />
-    </div>
+return (    
+      <div>        
+        <Formulario botao={btnCadastrar}/>
+        <Tabela vetor={produtos}/>
+      </div>
   )
 }
 
